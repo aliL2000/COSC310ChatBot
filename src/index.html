@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HablAI</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="button" id="close"></div>
+                <div class="button" id="minimize"></div>
+            </div>
+            <div class="title">HablAI</div>
+        </div>
+        <div aria-live="polite" aria-atomic="true" class="position-relative" style="z-index: 10;">
+            <div class="toast-container position-absolute top-0 end-0 p-3">
+                <div id="notification" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2000"> 
+                    <div class="toast-header">
+                        <img src="./img/lightbulb.svg" class="rounded me-2">
+                        <strong class="me-auto">Notification</strong>
+                        <small class="text-muted">just now</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div id="notification_text" class="toast-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <ul class="messages"></ul>
+        <div class="bottom_wrapper clearfix">
+            <div class="message_input_wrapper">
+                <input class="message_input" placeholder="Type your message here..." />
+            </div>
+            <div class="send_message">
+                <div class="icon"></div>
+                <div class="text">Send</div>
+            </div>
+        </div>
+    </div>
+    <div class="message_template">
+        <li class="message">
+            <div class="avatar"></div>
+            <div class="text_wrapper">
+                <div class="text"></div>
+            </div>
+        </li>
+    </div>
+    <script>
+        
+    </script>
+
+    <script src="./renderer.js"></script>
+</body>
+
+</html>
