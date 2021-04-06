@@ -1,0 +1,44 @@
+{
+  "name": "hablai",
+  "version": "3.0.0",
+  "description": "A ChatBot based on ParlAI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "test-init": "jasmine/bin/jasmine.js init",
+    "test": "jasmine/bin/jasmine.js"
+  },
+  "build": {
+    "appId": "hablai",
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "src/icon/win.ico"
+    },
+    "portable": {
+      "artifactName": "HablAI.exe"
+    }
+  },
+  "author": "Brian Zhou",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.9.0",
+    "bootstrap": "^5.0.0-beta2",
+    "dotenv": "^8.2.0",
+    "fast-csv": "^4.3.6",
+    "flickr-sdk": "^3.10.0",
+    "jquery": "^3.6.0",
+    "sentiment": "^5.0.2",
+    "typo-js": "^1.2.0",
+    "webpack-karma-jasmine": "^4.0.0",
+    "wordpos": "^2.1.0"
+  },
+  "devDependencies": {
+    "electron": "^10.4.0",
+    "electron-builder": "^22.10.5",
+    "jasmine": "^3.7.0"
+  }
+}
