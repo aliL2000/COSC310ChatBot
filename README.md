@@ -7,15 +7,16 @@ To actually run the program, download the repository to a directory of your choo
 ```
 npm install
 ```
-which installs the necessary Node.js modules needed to run the Chatbot, then run ...
+Which installs the necessary Node.js modules needed to run the Chatbot, then run ...
 ```
 npm start
 ```
+Then, the Chatbot system should start-up without any issues
 **New Features**
 
 - Implementation of Flickr API
 - Implementation of Wikipedia API
-- 
+
 **Applications**
 
-The chatbot has two new API's added to the Chatbot system, all changes are useful to the usability of the Chatbot, as the API's add increased functionality and accessibility for the users
+The chatbot has two new API's added to the Chatbot system, all changes are useful to the usability of the Chatbot, as the API's add increased functionality and accessibility for the users.
