@@ -11,7 +11,10 @@ Which installs the necessary Node.js modules needed to run the Chatbot, then run
 ```
 npm start
 ```
-Then, the Chatbot system should start-up without any issues
+Then, the Chatbot system should start-up without any issues.
+
+PLEASE NOTE: A personal API key was used in this program, and hence is a security issue.
+
 **New Features**
 
 - Implementation of Flickr API
