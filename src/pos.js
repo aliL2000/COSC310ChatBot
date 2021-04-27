@@ -72,12 +72,12 @@ async function process(sentence) {
     }
 
     if (nouns){
-        
+        var key = "INSERT PERSONAL API Key here"
         //default tag will be cat, and if there is a noun, it will switch to that noun
         if (nouns!="ASTARTE"){
             var tag = nouns[Math.floor(Math.random() * nouns.length)];
             
-            var url1="https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=7ad3d61bececb20801d5c99e0e347aa0&tags="+tag+"&per_page=1&page=1&format=json&nojsoncallback=1";
+            var url1="https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key="+key+"&tags="+tag+"&per_page=1&page=1&format=json&nojsoncallback=1";
             let urls1 = "";
             $.get(url1, function(data1) {
                 var tex1 = (JSON.stringify(data1));
@@ -109,7 +109,7 @@ async function process(sentence) {
         else{
             var tags = "dog";
             
-            var url2="https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=7ad3d61bececb20801d5c99e0e347aa0&tags="+tags+"&per_page=1&page=1&format=json&nojsoncallback=1";
+            var url2="https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key="+key+"&tags="+tags+"&per_page=1&page=1&format=json&nojsoncallback=1";
             console.log(url2);
             let urls2 = "";
             $.get(url2, function(data2) {
